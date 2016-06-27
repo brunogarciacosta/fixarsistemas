@@ -364,6 +364,7 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
+    background-color: whitesmoke;
 }
 
 
@@ -754,7 +755,7 @@ transition: all 1s ease-in-out;
 }
 
 .content {
-    padding: 150px 0 100px;
+    padding: 150px 0 0px;
     overflow-x: hidden;
 }
 
