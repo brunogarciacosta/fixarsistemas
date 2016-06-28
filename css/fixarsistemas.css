@@ -653,14 +653,10 @@ background-color:#435984 !important;
 
 
 #contato {
-    background-image: -webkit-linear-gradient(-240deg, #202a59 10%, #182848 0%);
-    background-image: -webkit-linear-gradient(120deg, #202a59 10%, #182848 0%);
-    background-image: linear-gradient(-30deg, rgba(32, 42, 89, 0) 0%, #182848 40%);
--webkit-transition: background-color 1s ease-in-out;
--moz-transition: background-color 1s ease-in-out;
--ms-transition: background-color 1s ease-in-out;
--o-transition: background-color 1s ease-in-out;
-transition: background-color 1s ease-in-out;
+    background: #1e1635;
+    background: -webkit-linear-gradient(bottom right,#4cddff,#3b9aca 10%,#2d6ca5 20%,#2a5291 27%,#283d81 35%,#222654 50%,#1e1635 63%,#0c0010 93%,#000);
+    background: linear-gradient(to top left,#4cddff,#3b9aca 10%,#2d6ca5 20%,#2a5291 27%,#283d81 35%,#222654 50%,#1e1635 63%,#0c0010 93%,#000);
+    
 }
 
 
@@ -675,7 +671,8 @@ label {
 }
 
 .input input {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(44, 101, 159, 0.3);
     border: 0;
     box-shadow: none;
     color: #fff;
@@ -688,16 +685,16 @@ label {
     width: 100%;
 }
 .input {
-    background-color: #3A4666;
     display: inline-block;
     margin-right: 10px;
     padding: 0;
     position: relative;
     font-family: 'Roboto';
+    
 }
 .input, .select, .textarea {
     border: 0;
-    border: 1px solid #465f78;
+    border: 1px solid rgba(44, 101, 159, 0.3);
     border-radius: 3px;
     box-shadow: none;
     display: block;
@@ -733,8 +730,8 @@ textarea {
     width: 645px;
     perspective-origin: 322.5px 60px;
     transform-origin: 322.5px 60px;
-    background: #3A4666;
-    border: 1px solid rgb(70, 95, 120);
+    background: rgba(0, 0, 0, 0.22);
+    border: 1px solid rgba(44, 101, 159, 0.3);
     border-radius: 3px 3px 3px 3px;
     font: normal normal normal normal 15px / 22.5px monospace;
     margin: 0px 0px 20px;
@@ -772,4 +769,46 @@ transition: all 1s ease-in-out;
     min-height: 640px;
     margin-top: -152px;
     padding: 120px 0 0;
+}
+
+#contato h1,
+#sobre-nos h1 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    border-color: black;
+    text-transform: initial;
+    font-size:50px;
+    margin-bottom:15px;
+    color: white;
+    font-size: 30px;
+}
+
+#contato .fa {
+
+    font-size: 25px;
+    float: right;
+    line-height: 24px;
+    padding: 5px;
+    
+}
+
+    
+.infos {
+    margin-top:100px;
+}
+
+.infos p {
+    color: #FFF;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(3, 39, 103, 0));
+}
+.infos p:nth-child(1) i {
+    color:#00ffa3;
+}
+
+.infos p:nth-child(2) i {
+    color:#3f8aff;
+}
+
+.infos p:nth-child(3) i {
+    color:#fff;
 }
