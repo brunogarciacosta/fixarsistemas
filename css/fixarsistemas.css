@@ -428,10 +428,10 @@ font-family: 'Open Sans';
 position: relative;
 bottom: 9px;
         -webkit-transition: all 500ms ease-in-out;
--moz-transition: all 500ms ease-in-out;
--ms-transition: all 500ms ease-in-out;
--o-transition: all 500ms ease-in-out;
-transition: all 500ms ease-in-out;
+-moz-transition: all 200ms ease-in-out;
+-ms-transition: all 200ms ease-in-out;
+-o-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
     
 }
 
@@ -510,6 +510,7 @@ transition: all 500ms ease-in-out;
 }
 
 .logo-img {
+    max-height: 250%;
     width: auto;
     height: 75px;
     margin-right: 1px;
@@ -557,9 +558,9 @@ transition: all 500ms ease-in-out;
 }
 
 #sobre-nos {
-    background-image: -webkit-linear-gradient(-240deg, #202a59 10%, #182848 70%);
-    background-image: -webkit-linear-gradient(120deg, #202a59 10%, #182848 70%);
-    background-image: linear-gradient(-30deg, #202a59 10%, #182848 70%);
+    background-image: -webkit-linear-gradient(30deg, #12061d 10%, #192a50 70%);
+    background-image: -webkit-linear-gradient(30deg, #12061d 10%, #192a50 70%);
+    background-image: linear-gradient(30deg, #12061d 10%, #192a50 70%);
 }
 
 .fixar-nome {
@@ -656,7 +657,9 @@ background-color:#435984 !important;
     background: #1e1635;
     background: -webkit-linear-gradient(bottom right,#4cddff,#3b9aca 10%,#2d6ca5 20%,#2a5291 27%,#283d81 35%,#222654 50%,#1e1635 63%,#0c0010 93%,#000);
     background: linear-gradient(to top left,#4cddff,#3b9aca 10%,#2d6ca5 20%,#2a5291 27%,#283d81 35%,#222654 50%,#1e1635 63%,#0c0010 93%,#000);
-    
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0);
+    overflow: hidden;
 }
 
 
@@ -761,6 +764,11 @@ transition: all 1s ease-in-out;
     z-index: 15;
     background-color:whitesmoke;
 }
+@media only screen and (max-width: 991px) {
+    .push {
+    margin: 0;
+}
+}
 
 .fixado {
     position: fixed;
@@ -770,6 +778,12 @@ transition: all 1s ease-in-out;
     margin-top: -152px;
     padding: 120px 0 0;
 }
+@media only screen and (max-width: 991px) {
+    .fixado {
+    position: relative;
+    padding-top: 180px;
+    text-align: center;
+    }}
 
 #contato h1,
 #sobre-nos h1 {
@@ -811,4 +825,25 @@ transition: all 1s ease-in-out;
 
 .infos p:nth-child(3) i {
     color:#fff;
+}
+.logobg {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/logo.svg);
+    background-position: 50% 48%;
+    top:50%;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-filter: alpha(opacity=0.1);
+    -moz-filter: alpha(opacity=0.1);
+    -ms-filter: alpha(opacity=0.1);
+    -o-filter: alpha(opacity=0.1);
+    filter: alpha(opacity=0.1);
+    -webkit-transform: scale(7.7);
+    transform: scale(7.7);
+    -webkit-transition: -webkit-transform .77s cubic-bezier(.225,.5,.165,1),opacity .77s cubic-bezier(.225,.5,.165,1);
+    transition: transform .77s cubic-bezier(.225,.5,.165,1),opacity .77s cubic-bezier(.225,.5,.165,1);
 }
